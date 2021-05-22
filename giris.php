@@ -18,9 +18,10 @@
     <body>
         <nav class="navbar navbar-expand-md fixed-top bg-success navbar-white navbar-dark">
             <div class="container">
-                <a href="bursaspor.html" class="navbar-brand text white">
-                    Bursaspor
+                <a href="anasayfa.html" class="navbar-brand text white">
+                    Melih
                 </a>
+                <!--3'lü İkon-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -68,27 +69,32 @@
             </div>
         </nav>
         <main>
-            <div class="container">
-                <br><br><br>
-                <img src="Resim/bursaspor.jpg" alt="takım" width="1000" height="500">
-                <p>
-                    <br>
-                    Bursaspor Kulübü 1963 yılında Bursa'da kurulan spor kulübüdür. Daha çok futbol branşıyla tanınan spor kulübü, futbol branşının yanı sıra basketbol, masa tenisi, voleybol, yüzme, boks ve atletizm dallarında faaliyet göstermektedir. Kulübün renkleri yeşil beyazdır.
-                    Bursa'da faaliyet gösteren 5 amatör kulübün birleşmesinden doğdu. Akınspor, Acar İdman Yurdu, Demirspor, İstiklalspor ve Pınarspor takımları birleşerek Bursaspor'u oluşturdular. Kulüp, renklerini Uludağ'ın karından ve ovanın yeşilinden aldı. Bursaspor'un amblemindeki 5 yıldız, kurucu takımları temsil ediyor.
-                    <br><br>
-                </p>
-                <iframe src="https://www.youtube-nocookie.com/embed/wqW7TFV6muc" width="1000" height="600" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>
-                    <br><br>
-                    Bursaspor futbol branşı ile tanınır. 50 sezon Süper Ligde mücadele eden takım 2009-10 sezonunda ise Süper Lig şampiyonu olarak Süper Ligde Şampiyon olan 5. takım olmuştur. 1 kez Türkiye Kupası 2 kez de Başbakanlık Kupasını kazanan takımın Avrupadaki en büyük başarısı ise Kupa Galipleri Kupasında çeyrek final oynaması ve Şampiyonlar Ligi gruplarında mücadele etmesidir.
-                    <br>
-                </p>
-                <h1>
-                    Stadyum
-                </h1>
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-t7LJ-mf_Wpwq-zN2acxlc3s8XLKDXWk" width="500" height="350"></iframe>
-                
-            </div>
+        <div class="container">
+            <br><br><br><br><br>
+			<?php 
+
+				include("kullanici.php");
+
+
+				if (($_POST["email"] == $user) and ($_POST["password"] == $pass))
+				{
+			       $_SESSION["login"] = "true";
+			       $_SESSION["user"] = $user;
+			       $_SESSION["pass"] = $pass;
+			
+			       echo("Hoşgeldin Melih");
+			
+				}
+			
+				else 
+				{
+			            echo "Kullancı Adı veya Şifre Yanlış.<br>";
+			            header("Refresh: 1; url=index.php");
+			    }
+			
+			?>
+			
+		</div>
         </main>
         <footer class="py-3 bg-success text-white text-center">
             <div id="social">
@@ -109,5 +115,4 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </body>
-     
 </html>

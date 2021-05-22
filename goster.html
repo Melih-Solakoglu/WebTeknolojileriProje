@@ -2,6 +2,8 @@
 <html lang="tr">
     <head>
         <meta charset="utf-8">
+        <!--Google Yazı Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
         <!--Sosyal Medya-->
         <script src="https://kit.fontawesome.com/afa4fc3610.js" crossorigin="anonymous"></script>
         <!-- Bootstrap -->
@@ -70,18 +72,18 @@
                 <h1>Gönderilen Bilgiler</h1>
                 <script type="text/javascript">
 
-					function getParameterByName(name, url) 
+					function getParameterByName(ad, url) 
 					{
 		            	if (!url) url = window.location.href;
-    		       		name = name.replace(/[\[\]]/g, '\\$&');
-        		    	var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+    		       		ad = ad.replace(/[\[\]]/g, '\\$&');
+        		    	var regex = new RegExp('[?&]' + ad + '(=([^&#]*)|&|#|$)'),
             		    	results = regex.exec(url);
            				if (!results) return null;
            				if (!results[2]) return '';
            				return decodeURIComponent(results[2].replace(/\+/g, ' '));
         			}
 
-  				    var name = getParameterByName('name');
+  				    var ad = getParameterByName('ad');
   				    var email = getParameterByName('email');
   				    var message = getParameterByName('message');
 
@@ -98,7 +100,7 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td><script>document.write(name);</script></td>
+                    <td><script>document.write(ad);</script></td>
                     <td><script>document.write(email);</script></td>
                     <td><script>document.write(message);</script></td>
                   </tr>

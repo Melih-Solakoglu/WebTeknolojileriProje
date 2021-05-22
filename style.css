@@ -1,7 +1,14 @@
+th{
+    color:darkblue;
+}
 
 h1{
     
     color: rgb(26, 207, 26);
+}
+/*Yazı tipi*/
+main{
+    font-family: 'Roboto', sans-serif;
 }
 
 h3{

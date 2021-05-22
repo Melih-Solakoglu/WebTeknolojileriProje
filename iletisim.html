@@ -2,6 +2,8 @@
 <html lang="tr">
     <head>
         <meta charset="utf-8">
+        <!--Google Yazı Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
         <!--Sosyal Medya-->
         <script src="https://kit.fontawesome.com/afa4fc3610.js" crossorigin="anonymous"></script>
         <!-- Bootstrap -->
@@ -74,28 +76,28 @@
                     İletişim Formu
                 </h1>
                 </p>
-                <form action="goster.html" name="Form" onsubmit="return control()">
+                <form action="goster.html" name="Form" onsubmit="return kontrol()">
 
                     <div class="form-group">
-                        <label for="name">Ad-Soyad</label>
-                        <input type="text" name="name" class="form-control" placeholder="Ad-Soyad giriniz.">							
-                        <small class="form-text text-muted">Zorunlu alan</small>
+                        <label for="ad">Ad-Soyad</label>
+                        <input type="text" name="ad" class="form-control" placeholder="Ad-Soyad giriniz.">							
+                        <small class="form-text text-muted">* Bu alan zorunlu</small>
                     </div>
     
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="text" name="email" class="form-control" placeholder="E-mailinizi giriniz.">
-                        <small class="form-text text-muted">Zorunlu alan</small>
+                        <small class="form-text text-muted">* Bu alan zorunlu</small>
                     </div>
                     
                     <div class="form-group">
-                        <label for="message">Mesaj</label>
-                        <textarea name="message" id="message" rows="8" class="form-control"></textarea>
+                        <label for="mesaj">Mesaj</label>
+                        <textarea name="message" id="mesaj" rows="8" class="form-control"></textarea>
                     </div>
     
                     <button class="btn btn-danger" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
     
-                    <button class="btn btn btn-success" type="submit" id="sub">Gönder</button>
+                    <button class="btn btn-success" type="submit" id="sub">Gönder</button>
     
                     <br><br><br>
     
@@ -122,9 +124,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <!-- JAVASCRIPT -->
     <script>
-		function control()
+		function kontrol()
 		{
-			var x = document.forms["Form"]["name"].value;
+			var x = document.forms["Form"]["ad"].value;
 			if (x == "") 
 			{
 				alert("Ad-Soyad giriniz.");
