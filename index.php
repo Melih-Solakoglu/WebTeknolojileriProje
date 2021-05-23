@@ -19,48 +19,8 @@
         <nav class="navbar navbar-expand-md fixed-top bg-success navbar-white navbar-dark">
             <div class="container">
                 <a href="" class="navbar-brand text white">
-                    Melih
+                    Giriş
                 </a>
-                <!--3'lü İkon-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="mainNavbar" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item">
-                            <a href=""class="nav-link active  text-white">
-                            Anasayfa
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=""class="nav-link active  text-white">
-                                Özgeçmiş
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=""class="nav-link active  text-white">
-                                Bursa
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=""class="nav-link active  text-white">
-                                Bursaspor
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=""class="nav-link active  text-white">
-                                İlgi Alanlarım
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=""class="nav-link active  text-white">
-                                İletişim
-                            </a>
-                        </li>
-                    </ul> 
-                </div>
-                
-            </div>
         </nav>
         <main>
         <div class="container">
@@ -70,11 +30,11 @@
 
 				<div class="form-group">
 					<label for="email">Email</label>
-					<input type="text" name="email" class="form-control" placeholder="Email 'g201210041@sakarya.edu.tr'" required="required">
+					<input type="text" name="email" class="form-control" placeholder="Email 'g201210041@sakarya.edu.tr'"required="required">
 				</div>
 
 				<div class="form-group">
-					<label for="password">Password</label>
+					<label for="password">Şifre</label>
 					<input type="password" name="password" class="form-control" placeholder="Şifre '123456'" required="required">
 				</div>
 

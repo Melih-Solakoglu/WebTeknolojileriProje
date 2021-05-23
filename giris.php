@@ -72,13 +72,13 @@
         <div class="container">
             <br><br><br><br><br>
 			<?php 
-
 				include("kullanici.php");
 
 
 				if (($_POST["email"] == $user) and ($_POST["password"] == $pass))
 				{
-			       $_SESSION["login"] = "true";
+                   
+			       $_SESSION["login"] = TRUE;
 			       $_SESSION["user"] = $user;
 			       $_SESSION["pass"] = $pass;
 			
@@ -89,7 +89,7 @@
 				else 
 				{
 			            echo "Kullancı Adı veya Şifre Yanlış.<br>";
-			            header("Refresh: 1; url=index.php");
+			            echo "<script>setTimeout(function(){location.replace(\"index.php\")},3000);</script>";
 			    }
 			
 			?>
