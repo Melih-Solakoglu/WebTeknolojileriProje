@@ -22,9 +22,12 @@ sosyal medya ikon
     padding-right:1rem;
     padding-bottom: 1rem;
     text-decoration: none;
-    color:darkgreen;
+    color: #e6e6e6;
     transition: all .3s;
 }
 #social a i:hover{
     opacity:.3;
+}
+button{
+    color:green;
 }
